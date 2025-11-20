@@ -2,9 +2,36 @@ body{
     background-image: url(../images/background.jpg);
      background-size: cover;     
   background-repeat: no-repeat; 
+  height: 500px;
+  margin: 0;
+  padding: 0;
   
 }
+
 .sun{
-    background-color: transparent;
-    width: 200px;
+    width: 130px;
+     margin-left: 200px;
+    animation: sun 2s  linear infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+@keyframes sun{
+0% {
+  transform: translate(0, 0);
+  width: 130px;
+}
+50%{
+    transform: translate(-20px,20px);
+    width: 140px;
+}
+75%{
+    transform: translate(0, 0);
+  width: 130px;
+}
+
+100% {
+  transform: translate(20px, 20px);
+  width: 140px;
+}
+    
 }
