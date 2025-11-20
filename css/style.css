@@ -4,3 +4,7 @@ body{
   background-repeat: no-repeat; 
   
 }
+.sun{
+    background-color: transparent;
+    width: 200px;
+}
